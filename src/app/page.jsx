@@ -97,7 +97,7 @@ function CaseStudies({ caseStudies }) {
       >
         <p className="text-neutral-500">
           Embark on a journey of boundless potential as we offer a complete range of services. 
-          We're your steadfast companion in traversing the digital realm, ensuring your business flourishes in this era of innovation.
+          We&apos;re your steadfast companion in traversing the digital realm, ensuring your business flourishes in this era of innovation.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -152,7 +152,7 @@ function OurServices() {
       >
         <p className="text-neutral-300">
           Embark on a journey of boundless potential as we offer a complete range of services. 
-          We're your steadfast companion in traversing the digital realm, ensuring your business flourishes in this era of innovation.
+          We&apos;re your steadfast companion in traversing the digital realm, ensuring your business flourishes in this era of innovation.
         </p>
       </SectionIntro>
       <Container className="mt-16">
