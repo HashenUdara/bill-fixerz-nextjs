@@ -54,6 +54,7 @@ function Header({
     <Container>
       <div className="flex items-center justify-between">
         <Link
+          className="flex items-center"
           href="/"
           aria-label="Home"
           onMouseEnter={() => setLogoHovered(true)}
@@ -64,11 +65,9 @@ function Header({
             invert={invert}
             filled={logoHovered}
           />
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+          <p className="ml-3 font-display text-4xl text-neutral-100 [text-wrap:balance] font-semibold">
+            Billfixerz.
+          </p>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
@@ -90,8 +89,8 @@ function Header({
               className={clsx(
                 'h-6 w-6',
                 invert
-                  ? 'fill-white group-hover:fill-neutral-200'
-                  : 'fill-neutral-950 group-hover:fill-neutral-700'
+                  ? 'fill-neutral-950 group-hover:fill-neutral-700'
+                  : 'fill-white group-hover:fill-neutral-200'
               )}
             />
           </button>
@@ -235,14 +234,14 @@ function RootLayoutInner({ children }) {
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-white pt-14"
+        className="relative flex flex-auto overflow-hidden bg-neutral-950 pt-14"
       >
         <motion.div
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-900  stroke-neutral-50/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
             yOffset={-96}
             interactive
           />
