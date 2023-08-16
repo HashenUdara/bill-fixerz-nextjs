@@ -63,19 +63,9 @@ export function ContactSection() {
             </h2>
             <div className="mt-6 flex">
               <Button href="/contact" >
-                Say Hei
+                Say Hi - Contact us
               </Button>
             </div>
-            <div className="mt-10  pt-10">
-              <h3 className="font-display text-base font-semibold text-white">
-                Our offices
-              </h3>
-              <Offices
-                invert
-                className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-              />
-            </div>
-
           </div>
         </div>
       </FadeIn>
