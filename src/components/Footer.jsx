@@ -6,28 +6,28 @@ import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
-  {
-    title: 'Work',
-    links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
-    ],
-  },
+  // {
+  //   title: 'Work',
+  //   links: [
+  //     { title: 'FamilyFund', href: '/work/family-fund' },
+  //     { title: 'Unseal', href: '/work/unseal' },
+  //     { title: 'Phobia', href: '/work/phobia' },
+  //     {
+  //       title: (
+  //         <>
+  //           See all <span aria-hidden="true">&rarr;</span>
+  //         </>
+  //       ),
+  //       href: '/work',
+  //     },
+  //   ],
+  // },
   {
     title: 'Company',
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      { title: 'Blog', href: '#' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
@@ -43,15 +43,15 @@ function Navigation() {
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section) => (
           <li key={section.title}>
-            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+            <div className="font-display text-sm font-semibold tracking-wider text-neutral-50">
               {section.title}
             </div>
-            <ul role="list" className="mt-4 text-sm text-neutral-700">
+            <ul role="list" className="mt-4 text-sm text-neutral-200">
               {section.links.map((link) => (
                 <li key={link.title} className="mt-4">
                   <Link
                     href={link.href}
-                    className="transition hover:text-neutral-950"
+                    className="transition hover:text-neutral-50"
                   >
                     {link.title}
                   </Link>
@@ -80,11 +80,11 @@ function ArrowIcon(props) {
 
 function NewsletterForm() {
   return (
-    <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+    <form className="max-w-sm" data-netlify="true" name="NewsletterForm" method="POST">
+      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-100">
         Sign up for our newsletter
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
+      <p className="mt-4 text-sm text-neutral-200">
         Subscribe to get the latest design news, articles, resources and
         inspiration.
       </p>
@@ -94,7 +94,7 @@ function NewsletterForm() {
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-100 ring-4 ring-transparent transition placeholder:text-neutral-300 focus:border-neutral-50 focus:outline-none focus:ring-neutral-50/5"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
@@ -121,14 +121,20 @@ export function Footer() {
           </div>
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
+          <Link href="/" aria-label="Home" className="flex items-center">
             <Logo className="h-8" fillOnHover />
+            <p className="ml-3 font-display text-neutral-100 [text-wrap:balance] font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
+            Billfixerz.
+            </p>
           </Link>
-          <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+          <p className="text-sm text-neutral-300">
+            © Billfixerz. {new Date().getFullYear()} | Crafted by 
+            <span className="text-neutral-100 font-semibold"> Hashen</span>
           </p>
         </div>
       </FadeIn>
     </Container>
   )
 }
+
+

@@ -65,7 +65,7 @@ function Header({
             invert={invert}
             filled={logoHovered}
           />
-          <p className="ml-3 font-display text-4xl text-neutral-100 [text-wrap:balance] font-semibold">
+          <p className="ml-3 font-display text-neutral-100 [text-wrap:balance] font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
             Billfixerz.
           </p>
         </Link>

@@ -21,6 +21,7 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 import { Button } from '@/components/Button'
 import services from '@/components/ServicesData';
+import { Logo } from '@/components/Logo'
 
 
 const clients = [
@@ -160,19 +161,7 @@ function OurServices() {
           {services.map((service, index) => (
             <FadeIn key={index} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition bg-neutral-50 hover:bg-neutral-200 sm:p-8">
-                <h3>
-                  <Link href="#">
-                    <span className="absolute inset-0 rounded-3xl" />
-                     <Image
-                      src={service.logo}
-                      alt={service.title}
-                      className="h-16 w-16"
-                      unoptimized
-                      width="10"
-                      height="10"
-                    />
-                  </Link>
-                </h3>
+                
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <span className="font-semibold">
                     Services
@@ -201,7 +190,7 @@ function OurServices() {
 function Services() {
   return (
     <>
-          <div className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl w-full">
+      <div className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl w-full">
         <svg
           className="relative  h-[21.1875rem] max-w-none -translate-x-1/2 sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -227,13 +216,12 @@ function Services() {
         </svg>
       </div>
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="Our Collective Commitment"
+        title="We Embrace Values That Define Us"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+        <p className="text-neutral-300">
+          We are not just a mere collection of individuals. We are a cohesive alliance, bound by a shared vision and fortified by unwavering core values.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -248,27 +236,22 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Loyalty" >
+              Embracing unwavering commitment, we stand united in fostering enduring relationships and dedicated partnerships that fuel our journey of growth.
+
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Trust">
+              Building on a foundation of integrity, we cultivate an environment where trust is not just earned but cherished, nurturing an atmosphere of reliability and transparency.
+
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Compassion">
+              Infused with empathy, we extend a helping hand to each other and those we serve, fostering a community that cares and uplifts in every endeavor.
+
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
-            </ListItem>
+            
           </List>
         </div>
+
       </Container>
     </>
   )
@@ -329,16 +312,16 @@ export default async function Home() {
       <OurServices />
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: '', logo: "" }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Fueling Innovation, Fostering Growth, and Igniting Possibilities – Our values resonate through every solution we craft, driving businesses towards a future where technology transforms dreams into reality.
       </Testimonial>
 
       <Services />
 
       <ContactSection />
+
+
     </>
   )
 }
