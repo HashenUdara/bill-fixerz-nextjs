@@ -245,7 +245,7 @@ function Services() {
 
             </ListItem>
             <ListItem title="Compassion">
-              Infused with empathy, we extend a helping hand to each other and those we serve, fostering a community that cares and uplifts in every endeavor."
+              Infused with empathy, we extend a helping hand to each other and those we serve, fostering a community that cares and uplifts in every endeavor.
 
             </ListItem>
             
