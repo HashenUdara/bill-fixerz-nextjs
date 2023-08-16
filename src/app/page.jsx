@@ -262,7 +262,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are developer studio working at the intersection of design and technology.',
+    'Step into tomorrow with Billfixerz, where cutting-edge solutions meet seamless automation. Elevate your business to new heights as we empower you to embrace innovation, streamlining operations and propelling growth beyond limits.',
 }
 
 export default async function Home() {
