@@ -205,7 +205,7 @@ function RootLayoutInner({ children }) {
                 }}
               />
             </div>
-            <Navigation />
+            {/*<Navigation />*/}
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">

@@ -41,7 +41,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left [text-wrap:balance]">
-            We’ve worked with hundreds of amazing peoples
+            Empowering Innovation Through Cutting-Edge Technologies
           </h2>
           <div className="h-px flex-auto bg-neutral-300" />
         </FadeIn>
@@ -54,7 +54,7 @@ function Clients() {
               <li key={client}>
                 <FadeIn className="flex items-center">
                   <Image src={logo} alt={client} unoptimized width="30" />
-                  <h2 className="font-display text-sm ml-3 font-semibold tracking-wider text-white text-left ">
+                  <h2 className="font-display  ml-3 font-semibold tracking-wider text-white text-left ">
                     {client}
                 </h2>
                 </FadeIn>
