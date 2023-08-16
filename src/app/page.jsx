@@ -160,19 +160,7 @@ function OurServices() {
           {services.map((service, index) => (
             <FadeIn key={index} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition bg-neutral-50 hover:bg-neutral-200 sm:p-8">
-                <h3>
-                  <Link href="#">
-                    <span className="absolute inset-0 rounded-3xl" />
-                     <Image
-                      src={service.logo}
-                      alt={service.title}
-                      className="h-16 w-16"
-                      unoptimized
-                      width="10"
-                      height="10"
-                    />
-                  </Link>
-                </h3>
+                
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <span className="font-semibold">
                     Services
@@ -231,7 +219,7 @@ function Services() {
         title="We help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
+        <p className="text-neutral-300">
           As long as those opportunities involve giving us money to re-purpose
           old projects — we can come up with an endless number of those.
         </p>
@@ -248,7 +236,7 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
+            <ListItem title="Web development" className="text-white">
               We specialise in crafting beautiful, high quality marketing pages.
               The rest of the website will be a shell that uses lorem ipsum
               everywhere.
@@ -331,9 +319,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Fueling Innovation, Fostering Growth, and Igniting Possibilities – Our values resonate through every solution we craft, driving businesses towards a future where technology transforms dreams into reality.
       </Testimonial>
 
       <Services />
