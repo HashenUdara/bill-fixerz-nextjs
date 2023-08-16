@@ -90,12 +90,12 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-50">
-          Email us
+          Email
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Reach us', 'info@billfixerz.com']
+            
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-50">{label}</dt>

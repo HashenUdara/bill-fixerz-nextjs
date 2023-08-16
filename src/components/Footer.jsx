@@ -6,22 +6,40 @@ import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
-  // {
-  //   title: 'Work',
-  //   links: [
-  //     { title: 'FamilyFund', href: '/work/family-fund' },
-  //     { title: 'Unseal', href: '/work/unseal' },
-  //     { title: 'Phobia', href: '/work/phobia' },
-  //     {
-  //       title: (
-  //         <>
-  //           See all <span aria-hidden="true">&rarr;</span>
-  //         </>
-  //       ),
-  //       href: '/work',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Reach us',
+    links: [
+      {
+        title: (
+          <>
+            Address <br/> 
+            <span aria-hidden="true" className="text-neutral-100"> 
+            Puttalam Road,
+            <br/>
+            Kurunegala
+            </span>
+          </>
+        ),
+        href: '/',
+      },
+      {
+        title: (
+          <>
+            Email <br/> <span aria-hidden="true">info@billfixerz.com &rarr;</span>
+          </>
+        ),
+        href: 'mailto:info@billfixerz.com',
+      },
+      {
+        title: (
+          <>
+            Telephone <br/> <span aria-hidden="true">(+94)76 713 7766 &rarr;</span>
+          </>
+        ),
+        href: 'tel:+94767137766',
+      },
+    ],
+  },
   {
     title: 'Company',
     links: [
