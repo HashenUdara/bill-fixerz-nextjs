@@ -8,15 +8,15 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoMitsubishi from '@/images/partners/1.png'
+import logoReact from '@/images/partners/7.png'
+import logoFlutter from '@/images/partners/3.png'
+import logoGithub from '@/images/partners/8.png'
+import logoSQL from '@/images/partners/5.png'
+import logoNode from '@/images/partners/6.png'
+import logoVS from '@/images/partners/2.png'
+import logoAWS from '@/images/partners/4.png'
+
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 import { Button } from '@/components/Button'
@@ -25,14 +25,14 @@ import { Logo } from '@/components/Logo'
 
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['AWS Cloud', logoAWS],
+  ['React', logoReact],
+  ['NodeJS', logoNode],
+  ['Flutter', logoFlutter],
+  ['VSCode', logoVS],
+  ['Github', logoGithub],
+  ['Mitsubishi', logoMitsubishi],
+  ['MySQL', logoSQL],
 ]
 
 function Clients() {
@@ -40,7 +40,7 @@ function Clients() {
     <div className="mt-24 bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56 backdrop-blur-2xl">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left [text-wrap:balance]">
             We’ve worked with hundreds of amazing peoples
           </h2>
           <div className="h-px flex-auto bg-neutral-300" />
@@ -52,8 +52,11 @@ function Clients() {
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
-                <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                <FadeIn className="flex items-center">
+                  <Image src={logo} alt={client} unoptimized width="30" />
+                  <h2 className="font-display text-sm ml-3 font-semibold tracking-wider text-white text-left ">
+                    {client}
+                </h2>
                 </FadeIn>
               </li>
             ))}
