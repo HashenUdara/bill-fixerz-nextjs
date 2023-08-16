@@ -54,7 +54,7 @@ function Clients() {
               <li key={client}>
                 <FadeIn className="flex items-center">
                   <Image src={logo} alt={client} unoptimized width="30" />
-                  <h2 className="font-display  ml-3 font-semibold tracking-wider text-white text-left ">
+                  <h2 className="font-display  ml-3 font-semibold tracking-wider text-white text-left text-sm sm:text-base">
                     {client}
                 </h2>
                 </FadeIn>
