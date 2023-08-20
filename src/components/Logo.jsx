@@ -12,7 +12,6 @@ export function Logomark({ invert = false, filled = false, ...props }) {
       src={logo}
       alt="Hi"
       className="h-10 w-10"
-      unoptimized
     />
 
   )
