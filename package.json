@@ -35,7 +35,7 @@
     "unified-conditional": "0.0.2"
   },
   "devDependencies": {
-    "eslint": "8.26.0",
+    "eslint": "8.48.0",
     "eslint-config-next": "13.0.2",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.6"
